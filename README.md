@@ -4,7 +4,7 @@
 
 This Shiny app provides an interactive interface for exploring information about ADS-AI courses within the Faculty of Social and Behavioral Science. The app utilizes two main data files:
 
-1. **data.xlsx**: Contains detailed information about the ADS-AI courses within FSBS at UU.
+1. **DS courses FSBS.xlsx**: Contains detailed information about the ADS-AI courses within FSBS at UU.
 2. **short.xlsx**: Contains keywords and covered topics for the courses.
 
 Additionally, you can explore a live version of the dashboard at [ADS-AI Taskforce Dashboard](https://tshahedi.shinyapps.io/ads-ai-taskforce/). This dashboard is an interactive tool for exploring the Faculty of Social and Behavioral Science's data science courses at utrecht university.
@@ -17,7 +17,7 @@ To run this Shiny app locally, ensure you have R and the necessary packages inst
 
 1. **Clone or download this repository** to your local machine.
 
-2. **Place the data files (`data.xlsx` and `short.xlsx`) in the same directory** as the Shiny app script (`ui.R` and `server.R`).
+2. **Place the data files (`DS courses FSBS.xlsx` and `short.xlsx`) in the same directory** as the Shiny app script (`ui.R` and `server.R`).
 
 3. **Run the Shiny app** by opening R and executing the following commands:
 
