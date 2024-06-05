@@ -29,4 +29,3 @@ runApp("path_to_your_app_directory")
 
 - **Course Information**: Browse through relevant information about each ADS-AI course.
 - **Keyword Search**: Use the keywords from `short.xlsx` to find courses covering specific topics.
-- **Interactive Dashboard**: The app provides an interactive dashboard for a comprehensive view of the courses, allowing users to filter and sort based on various criteria.
