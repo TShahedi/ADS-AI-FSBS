@@ -9,6 +9,9 @@ This Shiny app provides an interactive interface for exploring information about
 
 Additionally, you can explore a live version of the dashboard at [ADS-AI Taskforce Dashboard](https://tshahedi.shinyapps.io/ads-ai-taskforce/). This dashboard is an interactive tool for exploring the Faculty of Social and Behavioral Science's data science courses at utrecht university.
 
+### Background
+This app was created by customizing the code from the [UU-DS-courses](https://github.com/a-dacko/UU-DS-courses) project. The modifications focus on providing a more specialized view of ADS-AI courses offered within FSBS by using real-time datasets to meet the specific needs of FSBS.
+
 ### Installation
 
 To run this Shiny app locally, ensure you have R and the necessary packages installed.
