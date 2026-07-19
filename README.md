@@ -1,34 +1,52 @@
-# README
+# ADS-AI Course Dashboard (FSBS)
 
-## Shiny App for ADS-AI Courses
+![R](https://img.shields.io/badge/R-Shiny-276DC3?style=flat&logo=r&logoColor=white)
+![License](https://img.shields.io/badge/License-GPL--3.0-green?style=flat)
 
-This Shiny app provides an interactive interface for exploring information about ADS-AI courses within the Faculty of Social and Behavioral Science. The app utilizes two main data files:
+Interactive **R Shiny** dashboard for exploring the data science and AI courses offered within the **Faculty of Social and Behavioural Sciences (FSBS)** at Utrecht University.
 
-1. **DS courses FSBS.xlsx**: Contains detailed information about the ADS-AI courses within FSBS at UU.
-2. **short.xlsx**: Contains keywords and covered topics for the courses.
+🔗 **Live app: [tshahedi.shinyapps.io/ads-ai-taskforce](https://tshahedi.shinyapps.io/ads-ai-taskforce/)**
 
-Additionally, you can explore a live version of the dashboard at [ADS-AI Taskforce Dashboard](https://tshahedi.shinyapps.io/ads-ai-taskforce/). This dashboard is an interactive tool for exploring the Faculty of Social and Behavioral Science's data science courses at utrecht university.
+## Features
 
-### Background
-This app was created by customizing the code from the [UU-DS-courses](https://github.com/a-dacko/UU-DS-courses) project. The modifications focus on providing a more specialized view of ADS-AI courses offered within FSBS by using real-time datasets to meet the specific needs of FSBS.
+- **Course explorer** — browse detailed information on ADS-AI courses within FSBS
+- **Keyword search** — find courses by covered topics
+- **Interactive visualizations** — D3 bubble charts (`r2d3`), plotly charts, and searchable tables
 
-### Installation
+## Data
 
-To run this Shiny app locally, ensure you have R and the necessary packages installed.
+| File | Contents |
+|---|---|
+| `DS courses FSBS.xlsx` | Detailed records of ADS-AI courses within FSBS |
+| `short.xlsx` | Keywords and topics covered per course |
 
-### Usage
+## Run locally
 
-1. **Clone or download this repository** to your local machine.
-
-2. **Place the data files (`DS courses FSBS.xlsx` and `short.xlsx`) in the same directory** as the Shiny app script (`ui.R` and `server.R`).
-
-3. **Run the Shiny app** by opening R and executing the following commands:
-
-```R
-runApp("path_to_your_app_directory")
+```r
+install.packages(c(
+  "shiny", "shinydashboard", "shinythemes", "shinyWidgets",
+  "tidyverse", "plotly", "DT", "readxl", "RColorBrewer",
+  "ggthemes", "packcircles", "r2d3", "htmlwidgets", "here"
+))
+shiny::runApp()
 ```
 
-### App Features
+## Repository structure
 
-- **Course Information**: Browse through relevant information about each ADS-AI course.
-- **Keyword Search**: Use the keywords from `short.xlsx` to find courses covering specific topics.
+```text
+.
+├── ui.R                    # dashboard layout
+├── server.R                # server logic and plots
+├── bubble.js / bubble_2.js # D3 bubble chart code used via r2d3
+├── ShinyApp.Rmd            # development notebook
+├── DS courses FSBS.xlsx    # course data
+└── short.xlsx              # course keywords
+```
+
+## Acknowledgments
+
+Adapted from the [UU-DS-courses](https://github.com/a-dacko/UU-DS-courses) project, customized for FSBS with updated datasets and visualizations.
+
+## License
+
+Released under the [GPL-3.0 License](LICENSE).
